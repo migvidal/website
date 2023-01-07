@@ -2361,6 +2361,34 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
+
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+
+.col-end-11 {
+  grid-column-end: 11;
+}
+
+.col-end-12 {
+  grid-column-end: 12;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -3742,6 +3770,14 @@ EmojiSymbols;
     grid-column: span 2 / span 2;
   }
 
+  .sm\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -3852,6 +3888,14 @@ EmojiSymbols;
 @media (min-width: 768px) {
   .md\:sticky {
     position: sticky;
+  }
+
+  .md\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .md\:mt-12 {
@@ -4248,6 +4292,18 @@ EmojiSymbols;
     top: 3rem;
   }
 
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .lg\:col-end-12 {
+    grid-column-end: 12;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -4313,6 +4369,10 @@ EmojiSymbols;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -4331,6 +4391,10 @@ EmojiSymbols;
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:prose-xl {

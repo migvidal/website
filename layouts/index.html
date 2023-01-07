@@ -3,7 +3,8 @@
     <div class="bg-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-                <div class="col-span-6 px-4 sm:mb-6 lg:text-left lg:mb-0">
+                <!-- Hero text -->
+                <div class="sm:col-span-8 px-4 sm:mb-6 lg:text-left lg:mb-0">
                     <h1
                         class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
                         Soy Miguel Vidal.</h1>
@@ -12,7 +13,8 @@
                         para AIR Institute
                     </h2>
                 </div>
-                <div class="col-span-6">
+                <!-- Hero image -->
+                <div class="sm:col-span-3 lg:col-end-12">
                     {{ $hero := resources.GetMatch "images/pages/hero.jpg" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
@@ -21,8 +23,9 @@
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
                         {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}"
-                        width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                        width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-full" />
                 </div>
+                
             </div>
         </div>
     </div>
