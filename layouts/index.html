@@ -38,12 +38,9 @@
         <h2
         class="text-center text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl">
         Mi experiencia</h2>
-        <div class="lg:mx-auto lg:grid lg:max-w-5xl lg:grid-cols-3 lg:items-start lg:gap-16 lg:px-8">
-            <div class="relative sm:py-8 lg:py-0">
+        <div class="lg:mx-auto lg:max-w-5xl lg:px-8 mt-3">
+            <div class="relative">
                 <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-                    <div
-                        class="absolute inset-y-0 w-full bg-gray-50 dark:bg-gray-900/10 right-1/2 rounded-r-3xl lg:right-72">
-                    </div>
                     <svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404"
                         height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
                         <defs>
@@ -56,10 +53,10 @@
                         <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
                     </svg>
                 </div>
-                <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+                <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
                     <!-- Testimonial card-->
-                    <div class="relative pt-64 overflow-hidden shadow-xl rounded-2xl">
-                        {{ $missionimage := resources.Get "images/pages/admision-Air.jpeg" }}
+                    <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
+                        {{ $missionimage := resources.Get "images/pages/admision-Air.jpg" }}
                         {{ with $missionimage }}
                         {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
@@ -72,7 +69,7 @@
                         </div>
 
 
-                        <div class="relative px-8">
+                        <div class="relative px-8 ml-auto max-w-xl">
                             <div>
                                 <img class="h-12" src="images/tailbliss-white.svg" alt="Workcation">
                             </div>
@@ -105,9 +102,9 @@
                 </div>
             </div>
 
-            <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 col-span-2">
+            <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
                 <!-- Content area -->
-                <div class="md:pt-12 sm:pt-6 lg:pt-20">
+                <div class="relative px-8 ml-auto max-w-xl">
                     <div class="space-y-6 text-gray-900 dark:text-white">
                         <!-- Timeline -->
                         <ol class="relative pt-9 border-l border-gray-200 dark:border-gray-700">
@@ -177,8 +174,8 @@
             </div>
 
             <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
-                <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
-                    <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
+                <div class="px-4 text-gray-900 not-prose dark:text-zinc-200">
+                    <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none sm:grid-cols-2 md:grid-cols-3">
                         {{ range (.Paginator 3).Pages }}
                         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                             <a href="{{.Permalink}}">
