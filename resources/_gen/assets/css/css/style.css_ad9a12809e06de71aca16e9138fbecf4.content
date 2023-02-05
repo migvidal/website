@@ -2563,10 +2563,6 @@ video {
   max-width: 28rem;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -2577,6 +2573,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .max-w-4xl {
@@ -3669,10 +3669,6 @@ EmojiSymbols;
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:sticky {
     position: sticky;
   }
@@ -4064,8 +4060,8 @@ EmojiSymbols;
     width: 50%;
   }
 
-  .lg\:max-w-5xl {
-    max-width: 64rem;
+  .lg\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .lg\:max-w-none {
@@ -4074,18 +4070,6 @@ EmojiSymbols;
 
   .lg\:max-w-7xl {
     max-width: 80rem;
-  }
-
-  .lg\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
-  }
-
-  .lg\:max-w-3xl {
-    max-width: 48rem;
   }
 
   .lg\:grid-cols-12 {

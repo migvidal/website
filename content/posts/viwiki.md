@@ -10,6 +10,7 @@ author: TailBliss
 authorimage: ../assets/images/global/author.webp
 categories: Projects
 tags: Android
+github_subpath: ViWiki
 ---
 
 Cliente de Wikipedia para Android, simple y visual. Creado usando el SDK de Android con Kotlin, y architecture components.
