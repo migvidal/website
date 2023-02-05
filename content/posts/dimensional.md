@@ -14,6 +14,7 @@ categories: Projects
 tags: 
 - PHP
 - Trabajo final
+github_subpath: dimensional
 ---
 
 Galería online para explorar y subir modelos 3D.

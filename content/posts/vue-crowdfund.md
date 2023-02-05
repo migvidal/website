@@ -13,6 +13,7 @@ categories: Projects
 tags: 
 - Web
 - Vuejs
+github_subpath: crowdfunding-product-page
 ---
 
 Front-end para una web ficticia de crowdfunding. Realizado con VueJS (vanilla). Responsive, con ventanas modales, formularios y gestión de estado. Diseñado por FrontEndMentor.
