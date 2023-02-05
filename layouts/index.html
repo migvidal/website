@@ -40,7 +40,7 @@
         <h2
             class="text-center text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl">
             Mi experiencia</h2>
-        <div class="lg:mx-auto lg:max-w-5xl lg:px-8 mt-3">
+        <div class="lg:mx-auto lg:max-w-3xl lg:px-8 mt-3">
             <div class="relative">
                 <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
                     <svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404"
@@ -62,7 +62,7 @@
                         {{ with $missionimage }}
                         {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-                            class="absolute h-full w-auto mx-auto top-0 left-0 invisible md:visible" alt="TailBliss - Our Mission"
+                            class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible" alt="TailBliss - Our Mission"
                             loading="lazy" />
                         {{ end }}
                         {{ end }}
@@ -70,7 +70,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
                         </div>
 
-                        <div class="relative px-8 ml-auto max-w-xl">
+                        <div class="relative px-8 ml-auto max-w-md">
                             <ol class="relative border-l-8 border-white">
                                 <li class="ml-4">
                                     <div
@@ -95,7 +95,7 @@
 
             <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
                 <!-- Content area -->
-                <div class="relative px-8 ml-auto max-w-xl">
+                <div class="relative px-8 ml-auto max-w-md">
                     <div class="space-y-6 text-gray-900 dark:text-white">
                         <!-- Timeline -->
                         <ol class="relative pt-9 border-l border-gray-200 dark:border-gray-700">
