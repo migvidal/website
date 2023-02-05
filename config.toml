@@ -16,9 +16,11 @@ enableInlineShortcodes = true
 author = "Nusser Studios"
 authorimage = "../assets/images/global/author.webp"
 github = "https://github.com/migvidal/"
+linkedin = "https://www.linkedin.com/in/migvidal/"
+dribbble = "https://dribbble.com/miguelvidal/"
 og_image = "/images/tailbliss-cover.png"
 sitename = "Migvidal"
-twitter = "@migvidal_dev"
+twitter = "https://twitter.com/migvidal_dev/"
 description = "Miguel Vidal"
 
 [markup]
