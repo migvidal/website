@@ -56,25 +56,21 @@
                     </svg>
                 </div>
                 <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
-                    <!-- Testimonial card-->
+                    <!-- Latest experience -->
                     <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
-                        {{ $missionimage := resources.Get "images/pages/admision-Air.jpg" }}
+                        {{ $missionimage := resources.Get "images/pages/admission-air.png" }}
                         {{ with $missionimage }}
                         {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-                            class="absolute inset-0 object-cover w-full h-full" alt="TailBliss - Our Mission"
+                            class="absolute h-full w-auto mx-auto top-0 left-0 invisible md:visible" alt="TailBliss - Our Mission"
                             loading="lazy" />
-                        {{ end }}>
+                        {{ end }}
                         {{ end }}
                         <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
                         </div>
 
-
                         <div class="relative px-8 ml-auto max-w-xl">
-                            <div>
-                                <img class="h-12" src="images/tailbliss-white.svg" alt="Workcation">
-                            </div>
                             <ol class="relative border-l-8 border-white">
                                 <li class="ml-4">
                                     <div
@@ -82,7 +78,7 @@
                                     </div>
                                     <div class="mt-8 pb-8">
                                         <div class="relative text-lg font-medium text-white md:flex-grow">
-                                            <time class="block pb-2 text-sm font-normal text-white text-opacity-80">oct.
+                                            <time class="block pb-2 text-sm font-normal text-white dark:text-opacity-50 text-opacity-100">oct.
                                                 2022 - actualidad</time>
                                             <h3 class="relative font-bold text-2xl pb-2">Desarrollador Android -
                                                 investigador · AIR Institute

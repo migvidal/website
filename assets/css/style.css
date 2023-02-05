@@ -2281,6 +2281,10 @@ video {
   border-width: 0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -2588,6 +2592,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-screen-xl {
@@ -3251,6 +3259,10 @@ video {
   --tw-text-opacity: 0.8;
 }
 
+.text-opacity-100 {
+  --tw-text-opacity: 1;
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
@@ -3291,6 +3303,10 @@ video {
 
 .ring-zinc-300\/40 {
   --tw-ring-color: rgb(212 212 216 / 0.4);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -3601,6 +3617,18 @@ EmojiSymbols;
   color: rgb(129 140 248 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-opacity-100 {
+  --tw-text-opacity: 1;
+}
+
+.dark .dark\:text-opacity-40 {
+  --tw-text-opacity: 0.4;
+}
+
+.dark .dark\:text-opacity-50 {
+  --tw-text-opacity: 0.5;
+}
+
 .dark .dark\:placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -3609,6 +3637,10 @@ EmojiSymbols;
 .dark .dark\:placeholder-gray-400::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.dark .dark\:opacity-100 {
+  opacity: 1;
 }
 
 .dark .dark\:ring-gray-900\/40 {
@@ -3768,6 +3800,10 @@ EmojiSymbols;
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:sticky {
     position: sticky;
   }
@@ -4105,6 +4141,10 @@ EmojiSymbols;
 }
 
 @media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
   .lg\:absolute {
     position: absolute;
   }
