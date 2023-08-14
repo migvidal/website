@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.migvidal.migvidapp",
+    "sha256_cert_fingerprints":
+    ["53:1A:46:BF:4A:88:E9:82:DE:3D:06:20:39:BC:EF:B4:74:68:4F:D2:84:40:FB:E2:08:F2:0B:2E:B0:EA:F4:28"]
+  }
+}]
