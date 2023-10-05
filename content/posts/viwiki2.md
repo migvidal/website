@@ -9,7 +9,7 @@ author: Miguel
 authorimage: ../assets/images/global/author.webp
 categories: Projects
 tags: Android
-github_subpath: ViWiki
+github_subpath: viwiki2
 ---
 
 Cliente de Wikipedia para Android, simple y visual. Creado usando el SDK de Android con Kotlin.
