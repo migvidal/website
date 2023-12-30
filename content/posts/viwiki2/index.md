@@ -3,10 +3,10 @@ title: "(En progreso) - ViWiki 2.0"
 date: 2023-08-18T11:10:36+08:00
 draft: false
 language: es
-featured_image: ../assets/images/featured/featured-img-viwiki-2-teaser.png
+featured_image: /images/featured/featured-img-viwiki-2-teaser.png
 summary: Cliente de Wikipedia visual para Android. Creado con Kotlin y Jetpack Compose.
 author: Miguel
-authorimage: ../assets/images/global/author.webp
+authorimage: /images/global/author.webp
 categories: Projects
 tags: Android
 github_subpath: viwiki2
