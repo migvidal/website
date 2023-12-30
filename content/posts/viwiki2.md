@@ -17,3 +17,5 @@ Cliente de Wikipedia para Android, simple y visual. Creado usando el SDK de Andr
 IU con Jetpack Compose (Material 3).
 
 Utilizo 3 bibliotecas de terceros: "Compose destinations" para navegación, Retrofit para el acceso a las API de Wikipedia y Wikimedia. Coil para cargar imágenes.
+
+[Política de privacidad](/posts/viwiki-privacy-policy)
