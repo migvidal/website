@@ -1,5 +1,5 @@
 ---
-author: TailBliss
+author: Migvidal
 title: "Dimensional"
 date: 2021-05-05T21:47:48+01:00
 
@@ -8,7 +8,6 @@ language: es
 featured_image: ../assets/images/featured/dimensional.png
 summary: Galería online para explorar y subir modelos 3D.
 description: Dimensional
-author: Migvidal
 authorimage: ../assets/images/global/author.webp
 categories: Projects
 tags: 
