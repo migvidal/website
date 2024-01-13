@@ -1,6 +1,6 @@
 ---
 title: "Crowdfund Dashboard con Vue"
-date: 2021-09-09T21:13:46+01:00
+date: 2021-09-20T21:13:46+01:00
 draft: false
 language: es
 featured_image: ../assets/images/featured/crowdfund-vue.png
