@@ -4,30 +4,32 @@
     <section id="hero" class="bg-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
             <!-- Hero (grid) -->
+            {{ with .Params.hero }}
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <!-- Hero text -->
                 <div class="sm:col-span-9 px-4 sm:mb-6 lg:text-left lg:mb-0">
                     <h1
                         class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        Soy Miguel Vidal.</h1>
-                    <h2 class="pb-2 text-xl text-gray-800 dark:text-gray-300 md:text-2xl">
-                        <strong>Desarrollador de software, amante del diseño y la experiencia de usuario.</strong>
-                        <p>Actualmente creando pequeñas webs y aprendiendo Spring.</p>
-                        <p>¡Estoy buscando trabajo!</p>
+                        {{ .title }}</h1>
+                    <h2 class="text-xl text-gray-800 dark:text-gray-300 md:text-2xl">
+                        <strong>{{ .subtitle }}</strong>
+                    </h2>
+                    <h2 class="text-xl text-gray-800 dark:text-gray-300 md:text-2xl">
+                        {{ .description }}
                     </h2>
                     <br>
                     <div class="flex flex-wrap">
+                    {{ range .buttons }}
                     <a class="px-6 py-3 mx-1 mt-2 text-sm bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 font-semibold rounded-lg hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
-                       href="/rawfiles/CV-pdf.pdf">Descarga mi CV</a>
-                    <a class="px-6 py-3 mx-1 mt-2 text-sm bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 font-semibold rounded-lg hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
-                       href="/rawfiles/CV-english-pdf.pdf">Download my CV (EN)</a>
+                       href="{{ .link }}">{{ .text }}</a>
+                    {{ end }}
                     </div>
 
                 </div>
 
                 <!-- Hero image -->
                 <div class="sm:col-span-3 sm:col-start-10">
-                    {{ $hero := resources.GetMatch "images/pages/hero.jpg" }}
+                    {{ $hero := resources.GetMatch .picture }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
                     {{ $large := ($hero.Fill "576x576 webp q90") }}
@@ -39,17 +41,18 @@
                          width="100%" height="" alt="TailBliss Hero"
                          class="w-full max-w-[10rem] mx-auto rounded-full"/>
                 </div>
-
-
             </div>
+            {{ end }}
         </div>
     </section>
 
     <!-- Experience -->
+    {{ with .Params.experience }}
     <section id="experience" class="relative my-4">
         <h2
             class="text-center text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl">
-            Mi experiencia</h2>
+            {{ .title }}
+        </h2>
         <div class="lg:mx-auto lg:max-w-3xl lg:px-8 mt-3">
             <div class="relative">
                 <div aria-hidden="true"
@@ -72,8 +75,8 @@
                 <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
                     <!-- Latest experience -->
                     <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
-                        {{ $missionimage := resources.Get "images/pages/admission-air.png" }}
-                        {{ with $missionimage }}
+                        {{ $latestExperienceImage := resources.Get "images/pages/admission-air.png" }}
+                        {{ with $latestExperienceImage }}
                         {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
                              height="{{ .Height }}"
@@ -165,6 +168,7 @@
             </div>
         </div>
     </section>
+    {{ end }}
 
     <!-- Projects -->
     <section id="projects"
