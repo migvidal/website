@@ -19,9 +19,14 @@ experience:
         company: AIR Institute
         description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
         image: images/pages/admission-air.png
-      - start_date: oct. 2022
-        end_date: oct. 2023
-        title: Desarrollador Android - investigador
-        company: AIR Institute
-        description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
+      - start_date: feb.
+        end_date: mayo 2022
+        title: Desarrollador web y Android
+        company: HP SCDS
+        description: Recibí formación en Android, Java y Spring Boot.
+      - start_date: abr.
+        end_date:  jul. 2021
+        title: Desarrollador web
+        company: Fiebre
+        description: Trabajé en webs con Shopify y Wordpress. Creé un script JS para superponer imágenes, reduciendo el trabajo de los diseñadores.
 ---
