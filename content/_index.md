@@ -13,12 +13,17 @@ hero:
 experience:
     title: Mi experiencia
     jobs:
+      - start_date: feb. 2024
+        end_date: actualidad
+        title: Centers developer
+        company: NTT Data
+        description: Desarrollo de aplicaciones Android de nivel empresarial.
+        image: images/pages/ntt-data.png
       - start_date: oct. 2022
         end_date: oct. 2023
         title: Desarrollador Android - investigador
         company: AIR Institute
         description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
-        image: images/pages/admission-air.png
       - start_date: feb.
         end_date: mayo 2022
         title: Desarrollador web y Android
