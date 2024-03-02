@@ -105,7 +105,7 @@
                                                     {{ .start_date }} - {{ .end_date }}
                                                 </time>
                                                 <h3 class="relative font-bold text-2xl pb-2">
-                                                    {{ .title }}
+                                                    {{ .title }} · {{ .company }}
                                                 </h3>
                                                 <p class="font-normal text-white text-opacity-80">
                                                     {{ .description }}
@@ -142,7 +142,8 @@
                                     {{ .start_date }} - {{ .end_date }}
                                 </time>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                    {{ .title }}</h3>
+                                    {{ .title }} · {{ .company }}
+                                </h3>
                                 <p class="text-base font-normal text-gray-500 dark:text-gray-400">
                                     {{ .description }}</p>
                             </li>
