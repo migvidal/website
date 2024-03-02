@@ -53,119 +53,109 @@
             class="text-center text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl">
             {{ .title }}
         </h2>
-        <div class="lg:mx-auto lg:max-w-3xl lg:px-8 mt-3">
-            <div class="relative">
-                <div aria-hidden="true"
-                     class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-                    <svg class="absolute -ml-3 top-8 left-1/2" width="404"
-                         height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
-                        <defs>
-                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0"
-                                     width="20" height="20"
-                                     patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4"
-                                      class="text-gray-200 dark:text-gray-900/60"
-                                      fill="currentColor"/>
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="392"
-                              fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"/>
-                    </svg>
-                </div>
-                <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
-                    <!-- Latest experience -->
-                    <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
-                        {{ $latestExperienceImage := resources.Get "images/pages/admission-air.png" }}
-                        {{ with $latestExperienceImage }}
-                        {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
-                             height="{{ .Height }}"
-                             class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible"
-                             alt="TailBliss - Our Mission"
-                             loading="lazy"/>
-                        {{ end }}
-                        {{ end }}
-                        <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
-                        </div>
 
-                        <div class="relative px-8 ml-auto max-w-md">
-                            <ol class="relative border-l-8 border-white">
-                                <li class="ml-4">
-                                    <div
-                                        class="absolute w-6 h-6 bg-white rounded-full -mt-0.5 -left-4 border border-white">
-                                    </div>
-                                    <div class="mt-8 pb-8">
-                                        <div class="relative text-lg font-medium text-white md:flex-grow">
-                                            <time
-                                                class="block pb-2 text-sm font-normal text-white dark:text-opacity-50 text-opacity-100">
-                                                oct.
-                                                2022 - oct. 2023
-                                            </time>
-                                            <h3 class="relative font-bold text-2xl pb-2">
-                                                Desarrollador Android -
-                                                investigador · AIR Institute
-                                            </h3>
-                                            <p class="font-normal text-white text-opacity-80">
-                                                Desarrollo de aplicaciones Android innovadoras en un
-                                                equipo reducido.</p>
+        <div class="lg:mx-auto lg:max-w-3xl lg:px-8 mt-3">
+            <!-- Latest experience -->
+            {{ range $index, $job := .jobs }}
+                {{ if eq $index 0 }}
+                <div class="relative">
+                    <div aria-hidden="true"
+                         class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                        <svg class="absolute -ml-3 top-8 left-1/2" width="404"
+                             height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
+                            <defs>
+                                <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0"
+                                         width="20" height="20"
+                                         patternUnits="userSpaceOnUse">
+                                    <rect x="0" y="0" width="4" height="4"
+                                          class="text-gray-200 dark:text-gray-900/60"
+                                          fill="currentColor"/>
+                                </pattern>
+                            </defs>
+                            <rect width="404" height="392"
+                                  fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"/>
+                        </svg>
+                    </div>
+                    <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
+                        <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
+                            {{ $latestExperienceImage := resources.Get $job.image }}
+                            {{ with $latestExperienceImage }}
+                            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+                            <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
+                                 height="{{ .Height }}"
+                                 class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible"
+                                 alt="TailBliss - Our Mission"
+                                 loading="lazy"/>
+                            {{ end }}
+                            {{ end }}
+                            <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
+                            </div>
+
+                            <div class="relative px-8 ml-auto max-w-md">
+                                <ol class="relative border-l-8 border-white">
+                                    <li class="ml-4">
+                                        <div
+                                            class="absolute w-6 h-6 bg-white rounded-full -mt-0.5 -left-4 border border-white">
                                         </div>
-                                    </div>
-                                </li>
-                            </ol>
+                                        <div class="mt-8 pb-8">
+                                            <div class="relative text-lg font-medium text-white md:flex-grow">
+                                                <time
+                                                    class="block pb-2 text-sm font-normal text-white dark:text-opacity-50 text-opacity-100">
+                                                    oct.
+                                                    2022 - oct. 2023
+                                                </time>
+                                                <h3 class="relative font-bold text-2xl pb-2">
+                                                    Desarrollador Android -
+                                                    investigador · AIR Institute
+                                                </h3>
+                                                <p class="font-normal text-white text-opacity-80">
+                                                    Desarrollo de aplicaciones Android innovadoras en un
+                                                    equipo reducido.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+                {{ end }}
+            {{ end }}
+            <!-- /Latest experience -->
+            <!-- Past experience -->
             <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none">
                 <!-- Content area -->
                 <div class="relative px-8 ml-auto max-w-md">
                     <div class="space-y-6 text-gray-900 dark:text-white">
                         <!-- Timeline -->
                         <ol class="relative pt-9 border-l border-gray-200 dark:border-gray-700">
+                            {{ range $index, $job := .jobs }}
+                                {{ if eq $index 0 }}
+                                    {{ continue }}
+                                {{ end }}
+                            <!-- List item -->
                             <li class="mb-10 ml-4">
                                 <div
-                                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 hover:bg-white dark:hover:bg-white">
+                                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 hover:bg-white dark:hover:bg-white">
                                 </div>
                                 <time
-                                    class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                                    feb.
-                                    - mayo 2022
+                                        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                                    {{ .start_date }} · {{ .end_date }}
                                 </time>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                    Desarrollador web y
-                                    Android · HP SCDS</h3>
+                                    {{ .title }}</h3>
                                 <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                                    Recibí formación en
-                                    Android, Java y Spring Boot.</p>
+                                    {{ .description }}</p>
                             </li>
-                            <li class="ml-4">
-                                <div
-                                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 hover:bg-white dark:hover:bg-white">
-                                </div>
-                                <time
-                                    class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                                    abr.
-                                    - jul. 2021
-                                </time>
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                    Desarrollador web ·
-                                    Fiebre</h3>
-                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                                    Trabajé en webs con
-                                    Shopify y Wordpress.</p>
-                                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                                    Creé un script JS para
-                                    superponer imágenes,
-                                    reduciendo el trabajo de los
-                                    diseñadores.</p>
-                            </li>
+                            <!-- /List item -->
+                            {{ end }}
                         </ol>
-                        <!-- END Timeline -->
+                        <!-- /Timeline -->
                     </div>
                 </div>
             </div>
+            <!-- /Past experience -->
         </div>
     </section>
     {{ end }}

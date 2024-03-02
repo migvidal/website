@@ -18,4 +18,10 @@ experience:
         title: Desarrollador Android - investigador
         company: AIR Institute
         description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
+        image: images/pages/admission-air.png
+      - start_date: oct. 2022
+        end_date: oct. 2023
+        title: Desarrollador Android - investigador
+        company: AIR Institute
+        description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
 ---
