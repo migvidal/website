@@ -2,7 +2,7 @@
 hero:
     title: Soy Miguel Vidal
     subtitle: Desarrollador de software, amante del diseño y la experiencia de usuario.
-    description: Actualmente trabajando en NTT Data.
+    description: Actualmente explorando iOS y React.
     buttons:
       - text: Descarga mi CV
         link: /rawfiles/CV-pdf.pdf
@@ -14,10 +14,10 @@ experience:
     title: Mi experiencia
     jobs:
       - start_date: feb. 2024
-        end_date: actualidad
+        end_date: abril 2024
         title: Centers developer
         company: NTT Data
-        description: Desarrollo de aplicaciones Android de nivel empresarial.
+        description: Desarrollo de una app Android híbrida de nivel empresarial.
         image: images/pages/ntt-data.png
       - start_date: oct. 2022
         end_date: oct. 2023
