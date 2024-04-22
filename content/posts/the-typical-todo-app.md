@@ -15,3 +15,5 @@ github_subpath: todo-app-demo-pro
 ---
 
 Todo comienza con una app de tareas, o "todos". Guardado de datos con la API LocalStorage. Construida en React y utilizando TailwindCSS para los estilos. Adaptable a modo oscuro y responsive.
+
+[Sitio web](https://migvidal.github.io/todo-app-demo-pro/)
