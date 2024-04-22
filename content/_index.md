@@ -17,7 +17,7 @@ experience:
         end_date: abril 2024
         title: Centers developer
         company: NTT Data
-        description: Desarrollo de una app Android híbrida de nivel empresarial.
+        description: Desarrollo y control de calidad de apps móviles de nivel empresarial.
         image: images/pages/ntt-data.png
       - start_date: oct. 2022
         end_date: oct. 2023
