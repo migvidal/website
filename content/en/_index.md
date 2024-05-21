@@ -1,37 +1,35 @@
 ---
 hero:
-    title: Soy Miguel Vidal
-    subtitle: Desarrollador de software, amante del diseño y la experiencia de usuario.
-    description: Actualmente explorando iOS y React.
+    title: I am Miguel Vidal
+    subtitle: Software developer, design and UX lover.
+    description: Currently exploring React and iOS.
     buttons:
-      - text: Descarga mi CV
-        link: /rawfiles/CV-pdf.pdf
       - text: Download my CV (EN)
         link: /rawfiles/CV-english-pdf.pdf
     picture: images/pages/hero.jpg
 
 experience:
-    title: Mi experiencia
+    title: My experience
     jobs:
       - start_date: feb. 2024
-        end_date: abril 2024
+        end_date: april 2024
         title: Centers developer
         company: NTT Data
-        description: Desarrollo y control de calidad de apps móviles de nivel empresarial.
+        description: Development and quality control of an enterprise-level hybrid app.
         image: images/pages/ntt-data.png
       - start_date: oct. 2022
         end_date: oct. 2023
-        title: Desarrollador Android - investigador
+        title: Android developer - researcher
         company: AIR Institute
-        description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
+        description: Development of innovative Android apps in a small team.
       - start_date: feb.
-        end_date: mayo 2022
-        title: Desarrollador web y Android
+        end_date: may 2022
+        title: Android and web developer
         company: HP SCDS
-        description: Recibí formación en Android, Java y Spring Boot.
+        description: Received training in Android, Java and Spring Boot.
       - start_date: abr.
         end_date:  jul. 2021
-        title: Desarrollador web
+        title: Web developer
         company: Fiebre
-        description: Trabajé en webs con Shopify y Wordpress. Creé un script JS para superponer imágenes, reduciendo el trabajo de los diseñadores.
+        description: I worked in Shopify and Wordpress websites. I created a JS script to overlay images in a mockup, thus reducing the designers' work.
 ---
