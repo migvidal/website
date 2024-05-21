@@ -17,3 +17,5 @@ tags:
 github_subpath: scoot-finder
 ---
 ¿Piensas comprar un patinete eléctrico? En esta web puedes contestar a unas simples preguntas, y obtener una recomendación. Web responsive, con soporte de modo oscuro e internacionalización (i18n). Utiliza React + Typescript con React Router y Talkr para la i18n. Estilos mediante Tailwind CSS.
+
+[Web](https://migvidal.github.io/scoot-finder/)
