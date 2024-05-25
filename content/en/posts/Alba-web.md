@@ -4,7 +4,7 @@ date: 2023-12-31T20:36:00+08:00
 draft: false
 language: en
 featured_image: /images/featured/Alba-web.png
-summary: Sitio web de Alba Vidal, traductora audiovisual.
+summary: Website for Alba Vidal, audiovisual translator.
 author: Miguel
 authorimage: /images/global/author.webp
 categories: Projects
