@@ -32,4 +32,11 @@ experience:
         title: Web developer
         company: Fiebre
         description: I worked in Shopify and Wordpress websites. I created a JS script to overlay images in a mockup, thus reducing the designers' work.
+
+projects:
+  title: Personal projects
+  subtitle: Ideas I develop in my free time
+
+contact:
+  title: Contact
 ---

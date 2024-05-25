@@ -167,14 +167,15 @@
         </div>
         <div class="relative px-2 mx-auto max-w-7xl">
             <div class="text-center">
+            {{ with .Params.projects }}
                 <h2
-                    class="text-3xl font-black tracking-tight text-indigo-500 capitalize dark:text-indigo-300 sm:text-4xl">
-                    Proyectos personales
-                </h2>
-                <p class="max-w-2xl mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
-                    Ideas que desarrollo
-                    en mi tiempo libre
-                </p>
+                class="text-3xl font-black tracking-tight text-indigo-500 capitalize dark:text-indigo-300 sm:text-4xl">
+                {{ .title }}
+            </h2>
+            <p class="max-w-2xl mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
+                {{ .subtitle }}
+            </p>
+            {{ end }}
             </div>
 
             <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
@@ -241,7 +242,7 @@
                     <!-- Contact grid -->
                     <div class="grid-cols-2 sm:grid-cols-4 gap-1 grid items-center justify-items-center">
                         <h2 class="col-span-2 sm:col-span-4 text-3xl font-bold tracking-tight text-white sm:text-4xl justify-self-start md:justify-self-center py-4 px-8">
-                            Contacto
+                            {{ .Params.contact.title }}
                         </h2>
                         <!-- Socials -->
                         <a href="{{ $.Site.Params.github }}"

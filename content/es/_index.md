@@ -34,4 +34,11 @@ experience:
         title: Desarrollador web
         company: Fiebre
         description: Trabajé en webs con Shopify y Wordpress. Creé un script JS para superponer imágenes, reduciendo el trabajo de los diseñadores.
+
+projects:
+  title: Proyectos personales
+  subtitle: Ideas que desarrollo en mi tiempo libre
+
+contact:
+  title: Contacto
 ---
