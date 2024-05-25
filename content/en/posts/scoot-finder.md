@@ -4,7 +4,7 @@ date: 2024-05-19T21:13:46+01:00
 draft: false
 language: en
 featured_image: /images/featured/scoot-finder.png
-summary: Electric scooter recommendation.
+summary: Electric scooter recommendator.
 description: Thinking of buying an electric scooter? In this website you can answer a few simple questions, and get a recommendation.
 author: Miguel
 authorimage: /images/global/author.webp

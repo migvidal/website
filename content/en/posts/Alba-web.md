@@ -1,5 +1,5 @@
 ---
-title: "Web de Alba Vidal"
+title: "Alba Vidal's website"
 date: 2023-12-31T20:36:00+08:00
 draft: false
 language: en
