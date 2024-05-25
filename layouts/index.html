@@ -83,13 +83,12 @@
                             {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                             <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
                                  height="{{ .Height }}"
-                                 class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible"
-                                 alt="TailBliss - Our Mission"
+                                 class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible filter invert"
                                  loading="lazy"/>
                             {{ end }}
                             {{ end }}
                             <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
+                            <div class="absolute inset-0 bg-gradient-to-t from-indigo-600">
                             </div>
 
                             <div class="relative px-8 ml-auto max-w-md">
