@@ -1,11 +1,11 @@
 ---
-title: "Acordeón FAQ"
+title: "Accordion FAQ"
 date: 2021-09-01T21:13:46+01:00
 draft: false
-language: es
+language: en
 featured_image: /images/featured/accordion.png
-summary: Sección de preguntas frecuentes responsive.
-description: Sección de preguntas frecuentes responsive.
+summary: Responsive FAQ section.
+description: Responsive FAQ section.
 author: Miguel
 authorimage: /images/global/author.webp
 categories: Projects
@@ -16,4 +16,4 @@ tags:
 github_subpath: faq-accordion-card-main
 ---
 
-Sección de preguntas frecuentes responsive con una distribución compleja de imágenes y fondo. Utiliza la etiqueta semántica _details_ customizada.
+Responsive FAQ section with a complex distribution of images and background. Uses a customized _details_ semantic tag.

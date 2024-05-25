@@ -2,10 +2,10 @@
 title: "Micro-Chat"
 date: 2022-01-20T21:13:46+01:00
 draft: false
-language: es
+language: en
 featured_image: /images/featured/microchat.png
-summary: App de chat con Firestore como back-end. Utiliza React con Firebase Hooks.
-description: App de chat con Firestore como back-end. Utiliza React con Firebase Hooks.
+summary: Chat app with Firestore as a back-end. Uses React with Firebase Hooks.
+description: Chat app with Firestore as a back-end. Uses React with Firebase Hooks.
 author: Miguel
 authorimage: /images/global/author.webp
 categories: Projects
@@ -15,6 +15,6 @@ tags:
 github_subpath: migvidal-micro-chat
 ---
 
-App de chat con Firestore como back-end. Utiliza React con Firebase Hooks.
+Chat app with Firestore as a back-end. Uses React with Firebase Hooks.
 
 [Web](https://migvidal-micro-chat.vercel.app)

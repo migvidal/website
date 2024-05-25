@@ -2,7 +2,7 @@
 title: "Web de Alba Vidal"
 date: 2023-12-31T20:36:00+08:00
 draft: false
-language: es
+language: en
 featured_image: /images/featured/Alba-web.png
 summary: Sitio web de Alba Vidal, traductora audiovisual.
 author: Miguel
@@ -14,6 +14,6 @@ tags:
 github_subpath: alba-website
 ---
 
-Sitio web de Alba Vidal, traductora audiovisual. Creado utilizando el generador de sitios web estáticos HUGO, y a partir de la plantilla HugoPlate de [Zeon Studio](https://zeon.studio).
+Website for Alba Vidal, audiovisual translator. Created using the static site generator HUGO, and based on [Zeon Studio](https://zeon.studio)'s HugoPlate template.
 
 [Web](https://albavidal.com)
