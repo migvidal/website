@@ -63,8 +63,8 @@
                 </div>
                 <div class="relative">
                     <!-- Contact grid -->
-                    <div class="grid-cols-2 sm:grid-cols-5 gap-1 grid items-center justify-items-center">
-                        <h2 class="col-span-2 sm:col-span-5 text-3xl font-bold tracking-tight text-white sm:text-4xl justify-self-start md:justify-self-center py-4 px-8">
+                    <div class="grid-cols-2 sm:grid-cols-6 gap-1 grid items-center justify-items-center">
+                        <h2 class="col-span-2 sm:col-span-full text-3xl font-bold tracking-tight text-white sm:text-4xl justify-self-start md:justify-self-center py-4 px-8">
                             {{ .Params.contact.title }}
                         </h2>
                         <!-- Socials -->
@@ -116,6 +116,12 @@
                                 <path fill-rule="evenodd"
                                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
                                       clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="{{ $.Site.Params.behance }}" class="hover:bg-zinc-100 hover:bg-opacity-50 p-4 flex justify-around w-full h-full text-white hover:text-gray-300">
+                            <span class="sr-only">Behance</span>
+                            <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/>
                             </svg>
                         </a>
                     </div>
