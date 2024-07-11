@@ -15,5 +15,5 @@ tags:
 github_subpath: dimensional
 ---
 
-GOnline gallery to explore and download 3D models.
+Online gallery to explore and download 3D models.
 PHP-based web app. Final project for my Web Development technical degree.
