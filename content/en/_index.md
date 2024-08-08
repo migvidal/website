@@ -2,7 +2,7 @@
 hero:
     title: I am Miguel Vidal
     subtitle: Software developer, design and UX lover.
-    description: Currently exploring React and iOS.
+    description: Currently reading __Why's (poignant) Guide to Ruby__.
     buttons:
       - text: Download my CV (EN)
         link: /rawfiles/CV-english-pdf.pdf
