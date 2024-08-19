@@ -11,12 +11,6 @@ hero:
 experience:
     title: My experience
     jobs:
-      - start_date: feb. 2024
-        end_date: april 2024
-        title: Centers developer
-        company: NTT Data
-        description: Development and quality control of an enterprise-level hybrid app.
-        image: images/pages/ntt-data.png
       - start_date: oct. 2022
         end_date: oct. 2023
         title: Android developer - researcher
