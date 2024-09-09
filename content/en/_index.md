@@ -11,6 +11,12 @@ hero:
 experience:
     title: My experience
     jobs:
+      - start_date: sept. 2024
+        end_date: current
+        title: Programmer
+        company: Vexiza
+        description: Development of mobile and web apps.
+        image: vexiza.webp
       - start_date: oct. 2022
         end_date: oct. 2023
         title: Android developer - researcher
