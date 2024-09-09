@@ -16,7 +16,7 @@ experience:
         title: Programmer
         company: Vexiza
         description: Development of mobile and web apps.
-        image: vexiza.webp
+        image: images/pages/vexiza.jpeg
       - start_date: oct. 2022
         end_date: oct. 2023
         title: Android developer - researcher

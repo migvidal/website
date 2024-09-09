@@ -164,12 +164,12 @@
                         <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
                             {{ $latestExperienceImage := resources.Get .image }}
                             {{ with $latestExperienceImage }}
-                            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-                            <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
-                                 height="{{ .Height }}"
-                                 class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible filter invert"
-                                 loading="lazy"/>
-                            {{ end }}
+                                {{ with .Resize (printf "%dx%d webp q100" .Width .Height) }}
+                                    <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}"
+                                         height="{{ .Height }}"
+                                         class="absolute h-full w-auto mx-auto top-0 left-0 invisible sm:visible"
+                                         loading="lazy"/>
+                                {{ end }}
                             {{ end }}
                             <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-indigo-600">
