@@ -2,7 +2,7 @@
 hero:
     title: I am Miguel Vidal
     subtitle: Software developer, design and UX lover.
-    description: Currently reading _Why's (poignant) Guide to Ruby_.
+    description: Currently working @ _[Vexiza](https://vexiza.com)_.
     buttons:
       - text: Download my CV (EN)
         link: /rawfiles/CV-english-pdf.pdf
